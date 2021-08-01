@@ -1,0 +1,10 @@
+#flip{
+    padding:10px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: 1px solid #c3c3c3;
+ }
+ #panel{
+     padding:60px;
+     display: none;
+ }

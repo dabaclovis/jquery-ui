@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, esse? Beatae ratione ad reiciendis odit.</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+
+    <div class="" id="flip">
+        Click
+        <div id="panel">
+            hello world
+        </div>
+    </div>
+    <div class="date">
+        <input type="text" id="what">
+    </div>
+    <div class="accord">
+        <h3>Heading</h3>
+        <div class="">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi perferendis provident 
+                delectus sapiente nisi facilis eligendi, eaque molestiae alias incidunt magnam 
+                non enim architecto, vero libero doloremque quos deleniti?</p>
+        </div>
+        <h3>Heading</h3>
+        <div class="">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi perferendis provident 
+                delectus sapiente nisi facilis eligendi, eaque molestiae alias incidunt magnam 
+                non enim architecto, vero libero doloremque quos deleniti?</p>
+        </div>
+        <h3>Heading</h3>
+        <div class="">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi perferendis provident 
+                delectus sapiente nisi facilis eligendi, eaque molestiae alias incidunt magnam 
+                non enim architecto, vero libero doloremque quos deleniti?</p>
+        </div>
+    </div>
+    <hr>
+    <div id="tab">
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+        </ul>
+        <div id="home">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                 accusamus
+                 inventore eius corporis beatae neque animi nihil unde, quidem 
+                 debitis?</p>
+        </div>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                 accusamus
+                 inventore eius corporis beatae neque animi nihil unde, quidem 
+                 debitis?</p>
+        </div>
+        <div id="about">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                 accusamus
+                 inventore eius corporis beatae neque animi nihil unde, quidem 
+                 debitis?</p>
+        </div>
+        <div id="services">
+            <h3>Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                 accusamus
+                 inventore eius corporis beatae neque animi nihil unde, quidem 
+                 debitis?</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#hide').click(function(){
+                $('p').hide();
+            });
+            $('#show').click(function(){
+                $('p').show();
+            });
+            $('#flip').click(function(){
+                $('#panel').slideToggle();
+            });
+            $("#what").datepicker();
+            $(".accord").accordion({
+                collapsible:true,
+            });
+            $("#tab").tabs();
+        });
+        
+       
+    </script>
+</body>
+</html>
